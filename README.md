@@ -4,7 +4,7 @@ Submitted by: **Christine Grimadeau**
 
 This web app: **BrewCards**
 
-Time spent: **20** hours spent in total
+Time spent: **25** hours spent in total
 
 ## Required Features
 
@@ -52,7 +52,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+One of the challanges I faced was making sure the card dimensions were adjusted properly to prevent text clipping while maintaining the flashcards since I wanted them to be balanced and visually appealing to sizes across different screen layouts. 
 
 ## License
 
