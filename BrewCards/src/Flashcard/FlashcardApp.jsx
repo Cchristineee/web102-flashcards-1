@@ -9,6 +9,7 @@ import strawberry from "../assets/strawberry-matcha.jpg";
 import chai from "../assets/masala chai.jpg";
 import mocha from "../assets/Mocha_Frappuccino.jpg";
 import flat from "../assets/Flat-White.jpg";
+import american from "../assets/Iced Americano.jpg";
 import './Flashcard.css'
 
 function FlashcardApp () {
@@ -21,7 +22,8 @@ function FlashcardApp () {
         { question: 'Name this drink', answer: 'Strawberry Matcha Latte', image: strawberry },
         { question: 'Name this drink', answer: 'Masala Chai Latte', image: chai },
         { question: 'Name this drink', answer: 'Mocha Frappuccino', image: mocha},
-		{ question: 'Name this drink', answer: 'Flat White', image: flat}
+		{ question: 'Name this drink', answer: 'Flat White', image: flat},
+		{ question: 'Name this drink', answer: 'Iced Americano', image: american}
 	];
 
 	const [index, setIndex] = useState(0)
