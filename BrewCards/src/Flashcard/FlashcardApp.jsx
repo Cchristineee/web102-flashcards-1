@@ -25,9 +25,15 @@ function FlashcardApp () {
 
 	return (
 		<div className="flashcard-app">
-			<button className="nav-button left" onClick={goPrev} aria-label="Previous card">←</button>
-			<FlashCard question={current.question} answer={current.answer} image={current.image} />
-			<button className="nav-button right" onClick={goNext} aria-label="Next card">→</button>
+			<div className="nav-top">
+				<button className="nav-button" onClick={goPrev} aria-label="Previous card">←</button>
+			</div>
+
+			<FlashCard key={index} question={current.question} answer={current.answer} image={current.image} />
+
+			<div className="nav-bottom">
+				<button className="nav-button" onClick={goNext} aria-label="Next card">→</button>
+			</div>
 		</div>
 	)
 }
