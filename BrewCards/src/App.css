@@ -1,1 +1,15 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--sans);
+}
+
+body {
+  background-color: beige;
+}
+
+
 
