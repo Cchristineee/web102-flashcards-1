@@ -14,20 +14,20 @@ import './Flashcard.css'
 
 function FlashcardApp () {
 	const cards = [
-		{ question: 'Name this drink', answer: 'Caramel Iced Coffee', image: caramel },
-		{ question: 'Name this drink', answer: 'Cold Brew', image: coldbrew },
-		{ question: 'Name this drink', answer: 'Iced Matcha', image: matcha },
-		{ question: 'Name this drink', answer: 'Cappuccino', image: capp },
-		{ question: 'Name this drink', answer: 'Iced Vanilla Latte', image: vanilla },
-        { question: 'Name this drink', answer: 'Strawberry Matcha Latte', image: strawberry },
-        { question: 'Name this drink', answer: 'Masala Chai Latte', image: chai },
-        { question: 'Name this drink', answer: 'Mocha Frappuccino', image: mocha},
-		{ question: 'Name this drink', answer: 'Flat White', image: flat},
-		{ question: 'Name this drink', answer: 'Iced Americano', image: american}
+		{ question: 'Made by chilled brewed coffee with ice, milk (or half-and-half), and caramel syrup or sauce', answer: 'Caramel Iced Coffee', image: caramel },
+		{ question: 'Coffee prepared by steeping coarsely ground beans in cold or room-temperature water for 12 to 24 hours', answer: 'Cold Brew', image: coldbrew },
+		{ question: 'Creamy, earthy beverage made by whisking high-quality Japanese green tea powder', answer: 'Iced Matcha', image: matcha },
+		{ question: 'An Italian coffee drink made with equal parts espresso, steamed milk, and milk foam', answer: 'Cappuccino', image: capp },
+		{ question: 'A refreshing, creamy espresso drink made with freshly brewed espresso, milk, vanilla syrup, and ice', answer: 'Iced Vanilla Latte', image: vanilla },
+        { question: 'A vibrant, refreshing, and slightly sweet drink that combines earthy green tea with fruity berry notes', answer: 'Strawberry Matcha Latte', image: strawberry },
+        { question: 'A creamy, spiced beverage originating from India', answer: 'Masala Chai Latte', image: chai },
+        { question: 'An iconic blended beverage mixing rich mocha sauce, Frappuccino Roast coffee, milk, and ice, topped with whipped cream', answer: 'Mocha Frappuccino', image: mocha},
+		{ question: 'An espresso-based coffee drink with a strong coffee flavor, made with a double shot of espresso and microfoam', answer: 'Flat White', image: flat},
+		{ question: 'A simple, refreshing coffee drink made by pouring a shot (or two) of freshly brewed espresso over ice and cold water', answer: 'Iced Americano', image: american}
 	];
 
 	const [index, setIndex] = useState(0)
-	
+
     /* Added next and prevoius to go thru flash cards */
 	const goNext = () => setIndex(i => (i + 1) % cards.length)
 	const goPrev = () => setIndex(i => (i - 1 + cards.length) % cards.length)
