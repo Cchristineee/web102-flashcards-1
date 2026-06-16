@@ -1,4 +1,4 @@
-# Web Development Project 2 - *BrewCards*
+# Web Development Project 2 - *Flashcards! Part 1*
 
 Submitted by: **Christine Grimadeau**
 
