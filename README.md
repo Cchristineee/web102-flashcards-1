@@ -2,7 +2,7 @@
 
 Submitted by: **Christine Grimadeau**
 
-This web app: **insert description**
+This web app: **BrewCards**
 
 Time spent: **20** hours spent in total
 
