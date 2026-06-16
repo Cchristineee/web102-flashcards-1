@@ -5,8 +5,9 @@ import coldbrew from "../assets/Cold-Brew.jpeg";
 import matcha from "../assets/IcedMatcha.jpg";
 import capp from "../assets/cappuccino.jpg";
 import vanilla from "../assets/iced-vanilla-latte.jpg";
-import strawberry from "../assets/strawberry-matcha.jpg"
-import chai from "../assets/masala chai.jpg"
+import strawberry from "../assets/strawberry-matcha.jpg";
+import chai from "../assets/masala chai.jpg";
+import mocha from "../assets/Mocha_Frappuccino.jpg";
 import './Flashcard.css'
 
 function FlashcardApp () {
@@ -17,7 +18,9 @@ function FlashcardApp () {
 		{ question: 'Name this drink', answer: 'Cappuccino', image: capp },
 		{ question: 'Name this drink', answer: 'Iced Vanilla Latte', image: vanilla },
         { question: 'Name this drink', answer: 'Strawberry Matcha Latte', image: strawberry },
-        { question: 'Name this drink', answer: 'Masala Chai Latte', image: chai }
+        { question: 'Name this drink', answer: 'Masala Chai Latte', image: chai },
+        { question: 'Name this drink', answer: 'Mocha Frappuccino', image: mocha}
+        
 	];
 
 	const [index, setIndex] = useState(0)
