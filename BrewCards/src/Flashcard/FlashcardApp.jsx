@@ -27,7 +27,8 @@ function FlashcardApp () {
 	];
 
 	const [index, setIndex] = useState(0)
-
+	
+    /* Added next and prevoius to go thru flash cards */
 	const goNext = () => setIndex(i => (i + 1) % cards.length)
 	const goPrev = () => setIndex(i => (i - 1 + cards.length) % cards.length)
 
