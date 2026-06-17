@@ -4,6 +4,8 @@
   margin: 20px auto;
   perspective: 1000px;
   cursor: pointer;
+  width: min(620px, 90vw);
+  min-height: 420px;
 }
 
 .card-inner {
@@ -21,15 +23,14 @@
 .card-front,
 .card-back {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -37,6 +38,7 @@
   overflow: hidden;
   border: 0.5px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
 }
 
 .card-front {
@@ -53,20 +55,24 @@
 
 .card-image {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 0;
-  margin-bottom: 0;
+  flex-shrink: 0;
 }
+
 /* I made the question label strip just below the image */
 .card-label {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 14px 20px;
-  border-top: 0.5px solid rgba(0, 0, 0, 0.06);
+  justify-content: center;
+  gap: 14px;
   width: 100%;
+  flex: 1;
+  padding: 24px;
+  text-align: center;
 }
+
 .card-label .badge {
   font-size: 11px;
   font-weight: 600;
@@ -84,9 +90,15 @@
   margin: 0 0 8px 0;
 }
 
-.card-front p, .card-back p {
+.card-front p,
+.card-back p {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #5e5875;
+  max-width: 90%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .flashcard-app {
@@ -142,25 +154,29 @@
 }
 
 .app-title {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 700;
   color: #2c2c2a;
-  margin-bottom: 4px;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+  text-align: center;
 }
 
 .app-subtitle {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #635e40;
   font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .card-counter {
   display: inline-block;
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 1rem;
   color: #888780;
   background: rgba(255, 255, 255, 0.55);
-  padding: 3px 10px;
+  padding: 8px 18px;
   border-radius: 20px;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
 }
