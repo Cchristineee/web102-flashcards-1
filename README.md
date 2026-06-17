@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 
 - [✅] Cards contain images in addition to or in place of text
   - [✅] Some or all cards have images in place of or in addition to text
-- [✅] Cards have different visual styles such as color based on their category
+- [ ] Cards have different visual styles such as color based on their category
   - Example categories you can use:
     - Difficulty: Easy/medium/hard
     - Subject: Biology/Chemistry/Physics/Earth science
