@@ -106,14 +106,12 @@ I also made a couple of UI changes as the previous project looked too static-y.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img width="1423" height="659" alt="BrewCards2" src="https://github.com/user-attachments/assets/f3ecb890-d7a3-4189-8980-6481d25df1a9" />
+
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with LICEcap
+
 
 ## Notes
 I think the hardest part of this part of the project was using useState to hook the variables for my longest and current streaks for the amount of questions the user would have to get right. To make sure the streak data persisted across my browser session, I leveraged the LocalStorage API alongside React's state management. Reviewing the official React documentation helped me implement a clean, lightweight persistence solution without the overhead of a complex external database.
