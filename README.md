@@ -81,13 +81,13 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 
-- [ ] Users can use a shuffle button to randomize the order of the cards
+- [✅] Users can use a shuffle button to randomize the order of the cards
   - Cards should remain in the same sequence (**NOT** randomized) unless the shuffle button is clicked 
   - Cards should change to a random sequence once the shuffle button is clicked
-- [ ] A user’s answer may be counted as correct even when it is slightly different from the target answer
+- [✅] A user’s answer may be counted as correct even when it is slightly different from the target answer
   - Answers are considered correct even if they only partially match the answer on the card 
   - Examples: ignoring uppercase/lowercase discrepancies, ignoring punctuation discrepancies, matching only for a particular part of the answer rather than the whole answer
-- [ ] A counter displays the user’s current and longest streak of correct responses
+- [✅] A counter displays the user’s current and longest streak of correct responses
   - The current counter increments when a user guesses an answer correctly
   - The current counter resets to 0 when a user guesses an answer incorrectly
   - A separate counter tracks the longest streak, updating if the value of the current streak counter exceeds the value of the longest streak counter 
@@ -98,7 +98,9 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [✅] List anything else that you added to improve the site's functionality!
+<br>
+I also made a couple of UI changes as the previous project looked too static-y. 
 
 ## Video Walkthrough
 
@@ -114,9 +116,7 @@ GIF created with ...
 [peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
-
-Describe any challenges encountered while building the app.
-
+I think the hardest part of this part of the project was using useState to hook the variables for my longest and current streaks for the amount of questions the user would have to get right. To make sure the streak data persisted across my browser session, I leveraged the LocalStorage API alongside React's state management. Reviewing the official React documentation helped me implement a clean, lightweight persistence solution without the overhead of a complex external database.
 ## License
 
     Copyright 2026 Christine Grimadeau
