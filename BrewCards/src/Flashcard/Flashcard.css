@@ -186,3 +186,13 @@
   color: #a0996a;
   margin-top: 6px;
 }
+
+.guessing {
+  font-weight: bolder;
+}
+
+.submit-btn {
+  width: 100px;
+  height: 35px;
+  font-size: 11px;
+}
