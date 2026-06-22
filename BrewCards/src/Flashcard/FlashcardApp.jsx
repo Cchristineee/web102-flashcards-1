@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import FlashCard from './Flashcard'
 import caramel from '../assets/Caramel-Iced-Coffee.jpg'
 import coldbrew from '../assets/Cold-Brew.jpeg'
@@ -29,6 +29,20 @@ function FlashcardApp() {
   const [index, setIndex] = useState(0)
   const [guess, setGuess] = useState('')
   const [feedback, setFeedback] = useState('')
+  const [currentStreak, setCurrentStreak] = useState(0)
+  const [longestStreak, setLongestStreak] = useState(0)
+
+  useEffect(() => {
+    const storedCurrent = Number(localStorage.getItem('brewcards-current-streak') || 0)
+    const storedLongest = Number(localStorage.getItem('brewcards-longest-streak') || 0)
+    setCurrentStreak(storedCurrent)
+    setLongestStreak(storedLongest)
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('brewcards-current-streak', String(currentStreak))
+    localStorage.setItem('brewcards-longest-streak', String(longestStreak))
+  }, [currentStreak, longestStreak])
 
   const goNext = () => {
     setIndex(i => (i + 1) % cards.length)
@@ -52,9 +66,13 @@ function FlashcardApp() {
     }
 
     if (normalizedGuess === cards[index].answer.toLowerCase()) {
+      const nextStreak = currentStreak + 1
+      setCurrentStreak(nextStreak)
+      setLongestStreak(prev => Math.max(prev, nextStreak))
       setFeedback('Nice work! That answer is correct.')
     } else {
-      setFeedback('Not quite right — keep guessing!')
+      setCurrentStreak(0)
+      setFeedback('Not quite right — streak reset. Try again!')
     }
   }
 
@@ -64,6 +82,7 @@ function FlashcardApp() {
     <section className="flashcard-app">
       <div className="flashcard-header">
         <p className="card-count">Card {index + 1} / {cards.length}</p>
+        <p className="streak-summary">Current streak: {currentStreak} · Longest streak: {longestStreak}</p>
         <p className="flip-hint">Tap the card to flip and reveal the answer.</p>
       </div>
 
