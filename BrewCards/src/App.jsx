@@ -10,8 +10,7 @@ export default function App() {
           <h1>The quiz for caffeine lovers</h1>
           <div className="header-meta">
             <span>10 cards</span>
-            <span>Current streak: 0</span>
-            <span>Longest streak: 0</span>
+            <span>Practice your coffee knowledge</span>
           </div>
         </div>
       </header>
