@@ -9,7 +9,7 @@ export default function App() {
           <p className="eyebrow">Brew Cards</p>
           <h1>The quiz for caffeine lovers</h1>
           <div className="header-meta">
-            <span>10 cards</span>
+            <span>20 cards</span>
             <span>Practice your coffee knowledge</span>
           </div>
         </div>
