@@ -12,6 +12,7 @@ import flat from '../assets/Flat-White.jpg'
 import american from '../assets/Iced Americano.jpg'
 import hojicha from '../assets/iced_hojicha_latte.jpg'
 import Affogato from '../assets/Affogato.jpg'
+import cortado from '../assets/Cortado.jpg'
 import './Flashcard.css'
 
 function FlashcardApp() {
@@ -27,7 +28,8 @@ function FlashcardApp() {
     { question: 'An espresso-based coffee drink with a strong coffee flavor, made with a double shot of espresso and microfoam', answer: 'Flat White', image: flat },
     { question: 'A simple, refreshing coffee drink made by pouring a shot (or two) of freshly brewed espresso over ice and cold water', answer: 'Iced Americano', image: american },
     { question: 'A smooth, refreshing Japanese beverage made with roasted green tea powder, milk of your choice, and ice', answer: 'Iced Hojicha latte', image: hojicha },
-    { question: 'Simple Italian dessert made by pouring hot espresso over a scoop of cold vanilla gelato or ice cream.', answer: 'Affogato', image: Affogato }
+    { question: 'Simple Italian dessert made by pouring hot espresso over a scoop of cold vanilla gelato or ice cream.', answer: 'Affogato', image: Affogato },
+    { question: 'Spanish coffee drink made with equal parts espresso and steamed milk, served in a small glass (around 4 oz).', answer: 'Cortado', image: cortado }
   ]
 
   const [index, setIndex] = useState(0)
