@@ -10,6 +10,7 @@ import chai from '../assets/masala chai.jpg'
 import mocha from '../assets/Mocha_Frappuccino.jpg'
 import flat from '../assets/Flat-White.jpg'
 import american from '../assets/Iced Americano.jpg'
+import hojicha from '../assets/iced_hojicha_latte.jpg'
 import './Flashcard.css'
 
 function FlashcardApp() {
@@ -23,7 +24,8 @@ function FlashcardApp() {
     { question: 'A creamy, spiced beverage originating from India', answer: 'Masala Chai Latte', image: chai },
     { question: 'An iconic blended beverage mixing rich mocha sauce, Frappuccino Roast coffee, milk, and ice, topped with whipped cream', answer: 'Mocha Frappuccino', image: mocha },
     { question: 'An espresso-based coffee drink with a strong coffee flavor, made with a double shot of espresso and microfoam', answer: 'Flat White', image: flat },
-    { question: 'A simple, refreshing coffee drink made by pouring a shot (or two) of freshly brewed espresso over ice and cold water', answer: 'Iced Americano', image: american }
+    { question: 'A simple, refreshing coffee drink made by pouring a shot (or two) of freshly brewed espresso over ice and cold water', answer: 'Iced Americano', image: american },
+    { question: 'A smooth, refreshing Japanese beverage made with roasted green tea powder, milk of your choice, and ice', answer: 'Iced Hojicha latte', image: hojicha }
   ]
 
   const [index, setIndex] = useState(0)
