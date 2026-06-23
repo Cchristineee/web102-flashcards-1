@@ -13,6 +13,7 @@ import american from '../assets/Iced Americano.jpg'
 import hojicha from '../assets/iced_hojicha_latte.jpg'
 import Affogato from '../assets/Affogato.jpg'
 import cortado from '../assets/Cortado.jpg'
+import leche from '../assets/CafeConLeche.jpg'
 import './Flashcard.css'
 
 function FlashcardApp() {
@@ -29,7 +30,8 @@ function FlashcardApp() {
     { question: 'A simple, refreshing coffee drink made by pouring a shot (or two) of freshly brewed espresso over ice and cold water', answer: 'Iced Americano', image: american },
     { question: 'A smooth, refreshing Japanese beverage made with roasted green tea powder, milk of your choice, and ice', answer: 'Iced Hojicha latte', image: hojicha },
     { question: 'Simple Italian dessert made by pouring hot espresso over a scoop of cold vanilla gelato or ice cream.', answer: 'Affogato', image: Affogato },
-    { question: 'Spanish coffee drink made with equal parts espresso and steamed milk, served in a small glass (around 4 oz).', answer: 'Cortado', image: cortado }
+    { question: 'Spanish coffee drink made with equal parts espresso and steamed milk, served in a small glass (around 4 oz).', answer: 'Cortado', image: cortado },
+    { question: 'A popular morning beverage originating in Spain and widely enjoyed across Latin America and Hispanic communities.', answer: 'Café con Leche', image: leche }
   ]
 
   const [index, setIndex] = useState(0)
