@@ -17,6 +17,8 @@ import leche from '../assets/CafeConLeche.jpg'
 import lait from '../assets/Cafe-Au-Lait.jpg'
 import tonic from '../assets/Espresso-Tonic.jpg'
 import london from '../assets/London-Fog.jpg'
+import dirty from '../assets/dirty-chai-latte.jpg'
+import pink from '../assets/PinkDrink.jpg'
 import './Flashcard.css'
 
 function FlashcardApp() {
@@ -38,6 +40,8 @@ function FlashcardApp() {
     { question: '(French for "coffee with milk") is a classic beverage made by combining strong brewed coffee with hot or steamed milk.', answer: 'Café Au Lait', image: lait },
     { question: 'A trendy, effervescent coffee drink made by pouring a shot of espresso over chilled tonic water and ice, often garnished with a slice of lime or rosemary.', answer: 'Espresso Tonic', image: tonic },
     { question: 'A cozy, aromatic tea latte made with Earl Grey tea, steamed milk, vanilla syrup, and a hint of lavender', answer: 'London Fog', image: london },
+    { question: 'A popular fusion beverage that adds a kick of caffeine to a spiced tea latte by mixing a shot of espresso into masala chai and steamed milk', answer: 'Dirty Chai Latte', image: dirty },
+    { question: 'Fruity, creamy, and highly caffeinated refresher made by combining a Strawberry Açaí base with creamy coconut milk and freeze-dried strawberries over ice', answer: 'Pink Drink', image: pink },
   ]
 
   const [index, setIndex] = useState(0)
