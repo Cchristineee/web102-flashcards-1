@@ -106,7 +106,8 @@ I also made a couple of UI changes as the previous project looked too static-y.
 
 Here's a walkthrough of implemented user stories:
 
-<img width="1423" height="659" alt="BrewCards2" src="https://github.com/user-attachments/assets/f3ecb890-d7a3-4189-8980-6481d25df1a9" />
+<img width="1423" height="659" alt="BrewCards3" src="https://github.com/user-attachments/assets/27cbf887-e075-4b1c-bc5d-83875df41310" />
+
 
 
 <!-- Replace this with whatever GIF tool you used! -->
