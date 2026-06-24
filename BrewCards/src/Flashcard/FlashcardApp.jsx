@@ -19,6 +19,7 @@ import tonic from '../assets/Espresso-Tonic.jpg'
 import london from '../assets/London-Fog.jpg'
 import dirty from '../assets/dirty-chai-latte.jpg'
 import pink from '../assets/PinkDrink.jpg'
+import vietnam from '../assets/vietnameseicedcoffee.jpg'
 import './Flashcard.css'
 
 function FlashcardApp() {
@@ -42,6 +43,8 @@ function FlashcardApp() {
     { question: 'A cozy, aromatic tea latte made with Earl Grey tea, steamed milk, vanilla syrup, and a hint of lavender', answer: 'London Fog', image: london },
     { question: 'A popular fusion beverage that adds a kick of caffeine to a spiced tea latte by mixing a shot of espresso into masala chai and steamed milk', answer: 'Dirty Chai Latte', image: dirty },
     { question: 'Fruity, creamy, and highly caffeinated refresher made by combining a Strawberry Açaí base with creamy coconut milk and freeze-dried strawberries over ice', answer: 'Pink Drink', image: pink },
+    { question: 'A strong, sweet, and rich coffee beverage made with dark-roast coffee, sweetened condensed milk, and ice', answer: 'Vietnamese Iced Coffee (Cà Phê Sữa Đá)', image: vietnam },
+
   ]
 
   const [index, setIndex] = useState(0)
