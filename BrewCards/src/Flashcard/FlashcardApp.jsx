@@ -15,6 +15,8 @@ import Affogato from '../assets/Affogato.jpg'
 import cortado from '../assets/Cortado.jpg'
 import leche from '../assets/CafeConLeche.jpg'
 import lait from '../assets/Cafe-Au-Lait.jpg'
+import tonic from '../assets/Espresso-Tonic.jpg'
+import london from '../assets/London-Fog.jpg'
 import './Flashcard.css'
 
 function FlashcardApp() {
@@ -33,7 +35,9 @@ function FlashcardApp() {
     { question: 'Simple Italian dessert made by pouring hot espresso over a scoop of cold vanilla gelato or ice cream.', answer: 'Affogato', image: Affogato },
     { question: 'Spanish coffee drink made with equal parts espresso and steamed milk, served in a small glass (around 4 oz).', answer: 'Cortado', image: cortado },
     { question: 'A popular morning beverage originating in Spain and widely enjoyed across Latin America and Hispanic communities.', answer: 'Café con Leche', image: leche },
-    { question: '(French for "coffee with milk") is a classic beverage made by combining strong brewed coffee with hot or steamed milk.', answer: 'Café Au Lait', image: lait }
+    { question: '(French for "coffee with milk") is a classic beverage made by combining strong brewed coffee with hot or steamed milk.', answer: 'Café Au Lait', image: lait },
+    { question: 'A trendy, effervescent coffee drink made by pouring a shot of espresso over chilled tonic water and ice, often garnished with a slice of lime or rosemary.', answer: 'Espresso Tonic', image: tonic },
+    { question: 'A cozy, aromatic tea latte made with Earl Grey tea, steamed milk, vanilla syrup, and a hint of lavender', answer: 'London Fog', image: london },
   ]
 
   const [index, setIndex] = useState(0)
